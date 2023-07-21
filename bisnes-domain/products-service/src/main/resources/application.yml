@@ -1,0 +1,18 @@
+server:
+  port: 9092
+spring:
+  application:
+    name: PRODUCT-SERVICE
+  ##################################################
+  # jpa config
+  #################################################
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+application:
+  title: Microservices
+  version: 0.0.1.SNAPSHOT
