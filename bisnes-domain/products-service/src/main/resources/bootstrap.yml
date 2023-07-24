@@ -1,0 +1,22 @@
+server:
+  port: 0
+spring:
+  application:
+    name: PRODUCT-SERVICE
+  cloud:
+    config:
+      profile: dev
+      uri: http://localhost:8888
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+application:
+  title: Microservices
+  version: 0.0.1.SNAPSHOT
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

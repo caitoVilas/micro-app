@@ -1,0 +1,14 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: CONFIG-SERVICE
+  #########################################################
+  # config repo local
+  #########################################################
+  cloud:
+    config:
+      server:
+        git:
+          uri: D:\\workspace\\spring-cloud\\service-configuration
+          clone-on-start: true
